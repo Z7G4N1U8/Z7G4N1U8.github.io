@@ -1,1 +1,88 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SomeEmptyBox - Portfolio</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header class="header">
+        <div class="container">
+            <a href="#home" class="logo">Portfolio ?</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- About Section -->
+        <section id="home">
+            <div class="home-content">
+                <h1>Hi, I'm <span>Peace</span></h1>
+                <p>
+                    I go by the nickname Peace and username SomeEmptyBox.
+                    <br>
+                    I like Android, Linux and just Tech in general.
+                </p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-title">My <span>Projects</span></h2>
+                <div class="projects-grid">
+
+                    <div class="project-card">
+                        <a href="https://github.com/SomeEmptyBox/nixcfg" target="_blank">
+                            <div class="project-content">
+                                <h3>NixOS Config</h3>
+                                <p>My NixOS Config with Catppuccin Everywhere.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="project-card">
+                        <a href="https://github.com/SomeEmptyBox/GKI_KernelSU_SUSFS" target="_blank">
+                            <div class="project-content">
+                                <h3>GKI KernelSU SUSFS</h3>
+                                <p>GKI Kernels with KernelSU and SUSFS Patches.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="project-card">
+                        <a href="https://github.com/SomeEmptyBox/android_build_utils" target="_blank">
+                            <div class="project-content">
+                                <h3>Android Build Utils</h3>
+                                <p>Scripts and Workflows to Build Android ROMs and Kernels.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 SomeEmptyBox. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
