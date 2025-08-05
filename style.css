@@ -176,11 +176,6 @@ section {
     align-content: center;
 }
 
-#contact p {
-    font-size: 1.1rem;
-    margin-bottom: 3rem;
-}
-
 .contact-links a {
     display: inline-block;
     margin: 0 1rem;
