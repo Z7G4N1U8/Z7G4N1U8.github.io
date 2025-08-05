@@ -1,0 +1,17 @@
+[
+  {
+    "title": "NixOS Config",
+    "description": "My NixOS Config with Catppuccin Everywhere.",
+    "link": "https://github.com/SomeEmptyBox/nixcfg"
+  },
+  {
+    "title": "GKI KernelSU SUSFS",
+    "description": "GKI Kernels with KernelSU and SUSFS Patches.",
+    "link": "https://github.com/SomeEmptyBox/GKI_KernelSU_SUSFS"
+  },
+  {
+    "title": "Android Build Utils",
+    "description": "Scripts and Workflows to Build Android ROMs and Kernels.",
+    "link": "https://github.com/SomeEmptyBox/android_build_utils"
+  }
+]
