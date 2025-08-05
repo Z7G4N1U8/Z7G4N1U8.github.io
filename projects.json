@@ -13,5 +13,10 @@
     "title": "Android Build Utils",
     "description": "Scripts and Workflows to Build Android ROMs and Kernels.",
     "link": "https://github.com/SomeEmptyBox/android_build_utils"
+  },
+  {
+    "title": "Guides",
+    "description": "Some Guides that i wrote, might be useful to some.",
+    "link": "https://SomeEmptyBox.github.io/guides"
   }
 ]
