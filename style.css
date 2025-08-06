@@ -168,27 +168,6 @@ section {
     color: var(--text-muted-color);
 }
 
-/* --- Contact Section --- */
-#contact {
-    height: 100vh;
-    text-align: center;
-    align-content: center;
-}
-
-.contact-links a {
-    display: inline-block;
-    margin: 0 1rem;
-    text-decoration: none;
-    color: var(--accent-color);
-    font-size: 1.2rem;
-    font-weight: 600;
-    transition: transform 0.3s ease;
-}
-
-.contact-links a:hover {
-    transform: scale(1.1);
-}
-
 /* --- Footer --- */
 .footer {
     text-align: center;
@@ -196,6 +175,22 @@ section {
     background-color: var(--primary-color);
     border-top: 1px solid var(--secondary-color);
     color: var(--text-muted-color);
+}
+
+.footer ul {
+    margin-top: 5px;
+}
+
+.footer li {
+    display: inline;
+    margin: 0 5px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 400;
 }
 
 /* --- Responsive Design --- */
