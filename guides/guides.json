@@ -1,6 +1,13 @@
-[
+{
+  "sections": [
     {
-        "name": "first",
-        "path": "guides/first.md"
+      "title": "Android",
+      "guides": [
+        {
+          "name": "Guide 1",
+          "path": "guides/first.md"
+        }
+      ]
     }
-]
+  ]
+}

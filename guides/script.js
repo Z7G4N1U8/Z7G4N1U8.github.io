@@ -5,12 +5,20 @@ document.addEventListener("DOMContentLoaded", () => {
             const sidebar = document.getElementById('sidebar');
             const content = document.getElementById('content');
 
-            data.forEach(guide => {
-                const link = document.createElement('a');
-                link.textContent = guide.name;
-                link.href = "#";
-                link.addEventListener('click', () => loadGuide(guide.path));
-                sidebar.appendChild(link);
+            data.sections.forEach(section => {
+                // Create a section header
+                const sectionHeader = document.createElement('h2');
+                sectionHeader.textContent = section.title;
+                sidebar.appendChild(sectionHeader);
+
+                // Create links for each guide in the section
+                section.guides.forEach(guide => {
+                    const link = document.createElement('a');
+                    link.textContent = guide.name;
+                    link.href = "#";
+                    link.addEventListener('click', () => loadGuide(guide.path));
+                    sidebar.appendChild(link);
+                });
             });
         });
 
