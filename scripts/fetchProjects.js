@@ -32,6 +32,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Set the inner HTML of the container
         projectsContainer.innerHTML = projectsHtml;
+
+        // Call applyRandomColor after the project cards are added to the DOM
+        applyRandomColor('.project-card', 'boxShadow', '0px 0px 50px color');
       }
     })
     .catch(error => {
