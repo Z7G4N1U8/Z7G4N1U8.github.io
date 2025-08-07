@@ -15,8 +15,18 @@
     "link": "https://github.com/SomeEmptyBox/android_build_utils"
   },
   {
+    "title": "This Website",
+    "description": "My website, currently work-in-progress.",
+    "link": "https://github.com/SomeEmptyBox/SomeEmptyBox.github.io"
+  },
+  {
     "title": "Guides",
     "description": "Some Guides that i wrote, might be useful to some.",
     "link": "https://SomeEmptyBox.github.io/guides"
+  },
+  {
+    "title": "Explore More",
+    "description": "Checkout my GitHub account for more stuff.",
+    "link": "https://github.com/SomeEmptyBox"
   }
 ]
