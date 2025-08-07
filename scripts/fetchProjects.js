@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Create an HTML string for all project cards
         const projectsHtml = projects.map(project => `
           <div class="project-card">
-            <a href="${project.link}" target="_blank" rel="noopener noreferrer">
+            <a href="${project.link}">
               <div class="project-content">
                 <h3 class="project-title">${project.title}</h3>
                 <p class="project-description">${project.description}</p>
