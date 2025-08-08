@@ -1,13 +1,17 @@
-{
-  "sections": [
-    {
-      "title": "Android",
-      "guides": [
-        {
-          "name": "Guide 1",
-          "path": "guides/first.md"
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "name": "Guide 1",
+    "description": "description",
+    "path": "guides/first.md"
+  },
+  {
+    "name": "Guide 2",
+    "description": "description",
+    "path": "guides/first.md"
+  },
+  {
+    "name": "Guide 3",
+    "description": "description",
+    "path": "guides/first.md"
+  }
+]

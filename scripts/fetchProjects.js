@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Create an HTML string for all project cards
         const projectsHtml = projects.map(project => `
-          <div class="project-card">
+          <div class="card">
             <a href="${project.link}">
-              <div class="project-content">
+              <div class="card-content">
                 <h3 class="project-title">${project.title}</h3>
                 <p class="project-description">${project.description}</p>
               </div>
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         projectsContainer.innerHTML = projectsHtml;
 
         // Call applyRandomColor after the project cards are added to the DOM
-        applyRandomColor('.project-card', 'boxShadow', '0px 0px 50px color');
+        applyRandomColor('.card', 'boxShadow', '0px 0px 50px color');
       }
     })
     .catch(error => {

@@ -3,15 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Guides</title>
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
-    <div class="container">
-        <nav class="sidebar" id="sidebar"></nav>
-        <div class="content" id="content"></div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
-    <script src="script.js"></script>
+
+    <section id="guides">
+        <div class="container">
+            <h2 class="section-title">My <span>Guides</span></h2>
+            <div id="card-container" class="cards-grid"></div>
+        </div>
+        <div id="content-display" class="hidden">
+            <button id="close-button">Close</button>
+            <div id="markdown-content"></div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="../scripts/randomColor.js" defer></script>
+    <script src="scripts/fetchGuides.js" defer></script>
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js" defer></script>
+    <script src="scripts/showMarkdown.js" defer></script>
 </body>
 </html>
