@@ -1,14 +1,28 @@
 // Function to load HTML content
-function loadHTML(elementId, filePath) {
-  fetch(filePath)
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById(elementId).innerHTML = data;
-    });
+function loadHTML(component) {
+    const filePath = `components/${component}.html`;
+
+    fetch(filePath)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
+        .then(data => {
+            // Find the element with the corresponding data-component attribute
+            const element = document.querySelector(`[data-component="${component}"]`);
+            if (element) {
+                element.innerHTML = data;
+            }
+        })
+        .catch(error => {
+            console.error('There was a problem with the fetch operation:', error);
+        });
 }
 
-// Load components
-loadHTML('home', 'components/home.html');
-loadHTML('projects', 'components/projects.html');
-loadHTML('header', 'components/header.html');
-loadHTML('footer', 'components/footer.html');
+// Automatically load components based on data attributes
+document.querySelectorAll('[data-component]').forEach(element => {
+    const component = element.getAttribute('data-component');
+    loadHTML(component);
+});
