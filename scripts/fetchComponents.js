@@ -8,5 +8,7 @@ function loadHTML(elementId, filePath) {
 }
 
 // Load components
+loadHTML('projects', 'components/projects.html');
+loadHTML('home', 'components/home.html');
 loadHTML('header', 'components/header.html');
 loadHTML('footer', 'components/footer.html');
