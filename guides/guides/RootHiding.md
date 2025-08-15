@@ -41,3 +41,4 @@ This will only list detection points and how to bypass them.
 - [Oasis of Peace](https://t.me/SomeEmptyBoxChat)
 - [RootThings](https://t.me/Rootthingschat)
 - [Blank's Assistance](https://t.me/BlankAssistance)
+- [Yuri's Chat](https://t.me/yurichattt)
