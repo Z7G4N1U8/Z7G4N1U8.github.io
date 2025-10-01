@@ -2,31 +2,31 @@
   {
     "title": "NixOS Config",
     "description": "My NixOS Config with Catppuccin Everywhere.",
-    "link": "https://github.com/SomeEmptyBox/nixcfg"
+    "link": "https://github.com/Z7G4N1U8/nixcfg"
   },
   {
     "title": "GKI KernelSU SUSFS",
     "description": "GKI Kernels with KernelSU and SUSFS Patches.",
-    "link": "https://github.com/SomeEmptyBox/GKI_KernelSU_SUSFS"
+    "link": "https://github.com/Z7G4N1U8/GKI_KernelSU_SUSFS"
   },
   {
     "title": "Android Build Utils",
     "description": "Scripts and Workflows to Build Android ROMs and Kernels.",
-    "link": "https://github.com/SomeEmptyBox/android_build_utils"
+    "link": "https://github.com/Z7G4N1U8/android_build_utils"
   },
   {
     "title": "This Website",
     "description": "My website, currently work-in-progress.",
-    "link": "https://github.com/SomeEmptyBox/SomeEmptyBox.github.io"
+    "link": "https://github.com/Z7G4N1U8/Z7G4N1U8.github.io"
   },
   {
     "title": "Guides",
     "description": "Some Guides that i wrote, might be useful to some.",
-    "link": "https://SomeEmptyBox.github.io/guides"
+    "link": "https://Z7G4N1U8.github.io/guides"
   },
   {
     "title": "Explore More",
     "description": "Checkout my GitHub account for more stuff.",
-    "link": "https://github.com/SomeEmptyBox"
+    "link": "https://github.com/Z7G4N1U8"
   }
 ]
