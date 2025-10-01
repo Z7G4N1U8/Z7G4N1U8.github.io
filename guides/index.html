@@ -1,31 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guides</title>
-    <link rel="stylesheet" href="../style.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Guides</title>
+        <link rel="stylesheet" href="../style.css" />
+    </head>
+    <body>
+        <section id="guides">
+            <div class="container">
+                <h2 class="section-title">My <span>Guides</span></h2>
+                <div id="cards-container" class="cards-grid"></div>
+            </div>
+            <div id="content-display" class="hidden">
+                <button id="close-button">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div id="markdown-content"></div>
+            </div>
+        </section>
 
-    <section id="guides">
-        <div class="container">
-            <h2 class="section-title">My <span>Guides</span></h2>
-            <div id="cards-container" class="cards-grid"></div>
-        </div>
-        <div id="content-display" class="hidden">
-            <button id="close-button"><i class="fa-solid fa-xmark"></i></button>
-            <div id="markdown-content"></div>
-        </div>
-    </section>
-
-    <!-- Scripts -->
-    <script src="scripts/createGuideCards.js" defer></script>
-    <script src="../scripts/randomColor.js" defer></script>
-    <script src="../scripts/fetchCards.js" defer></script>
-    <script src="https://unpkg.com/showdown/dist/showdown.min.js" defer></script>
-    <script src="scripts/showMarkdown.js" defer></script>
-    <script src="https://kit.fontawesome.com/e27ceda6de.js" crossorigin="anonymous" defer></script>
-
-</body>
+        <!-- Scripts -->
+        <script src="scripts/createGuideCards.js" defer></script>
+        <script src="../scripts/randomColor.js" defer></script>
+        <script src="../scripts/fetchCards.js" defer></script>
+        <script
+            src="https://unpkg.com/showdown/dist/showdown.min.js"
+            defer
+        ></script>
+        <script src="scripts/showMarkdown.js" defer></script>
+        <script
+            src="https://kit.fontawesome.com/e27ceda6de.js"
+            crossorigin="anonymous"
+            defer
+        ></script>
+    </body>
 </html>

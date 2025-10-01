@@ -17,7 +17,7 @@ function waitForElement(selector, timeout = 5000) {
 
     observer.observe(document.body, {
       childList: true,
-      subtree: true
+      subtree: true,
     });
 
     // Set a timeout to avoid waiting forever
@@ -28,25 +28,26 @@ function waitForElement(selector, timeout = 5000) {
   });
 }
 
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener("DOMContentLoaded", async () => {
   try {
     // Wait for the cards container to be available in the DOM
-    const cardsContainer = await waitForElement('#cards-container');
+    const cardsContainer = await waitForElement("#cards-container");
 
     // Fetch the project data from the JSON file
-    fetch('data.json')
-      .then(response => {
+    fetch("data.json")
+      .then((response) => {
         if (!response.ok) {
-          throw new Error('Network response was not ok ' + response.statusText);
+          throw new Error("Network response was not ok " + response.statusText);
         }
         return response.json(); // Parse the JSON from the response
       })
-      .then(cards => {
+      .then((cards) => {
         // Check if the container exists
         if (cardsContainer) {
           // If there are no cards, display a message
           if (cards.length === 0) {
-            cardsContainer.innerHTML = '<p>No cards to display at the moment. Check back soon!</p>';
+            cardsContainer.innerHTML =
+              "<p>No cards to display at the moment. Check back soon!</p>";
             return;
           }
 
@@ -55,19 +56,22 @@ document.addEventListener('DOMContentLoaded', async () => {
           cardsContainer.innerHTML = cardsHtml;
 
           // Call applyRandomColor after the cards are added to the DOM
-          if (typeof applyRandomColor === 'function') {
-            applyRandomColor('.card', 'boxShadow', '0px 0px 50px color');
+          if (typeof applyRandomColor === "function") {
+            applyRandomColor(".card", "boxShadow", "0px 0px 50px color");
           }
         }
       })
-      .catch(error => {
-        console.error('There was a problem with the fetch operation:', error);
+      .catch((error) => {
+        console.error("There was a problem with the fetch operation:", error);
         if (cardsContainer) {
-          cardsContainer.innerHTML = '<p>Sorry, cards could not be loaded at this time.</p>';
+          cardsContainer.innerHTML =
+            "<p>Sorry, cards could not be loaded at this time.</p>";
         }
       });
   } catch (error) {
-    console.error('Cards container not found:', error);
-    console.error('Make sure the element with id "cards-container" exists in the DOM');
+    console.error("Cards container not found:", error);
+    console.error(
+      'Make sure the element with id "cards-container" exists in the DOM',
+    );
   }
 });

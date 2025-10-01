@@ -1,5 +1,7 @@
 function createCardHtml(data) {
-    return data.map(card => `
+  return data
+    .map(
+      (card) => `
         <div class="card">
             <a href="${card.link}">
                 <div class="card-content">
@@ -8,5 +10,7 @@ function createCardHtml(data) {
                 </div>
             </a>
         </div>
-    `).join(''); // Join all the card strings together
+    `,
+    )
+    .join(""); // Join all the card strings together
 }
